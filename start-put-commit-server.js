@@ -2,22 +2,22 @@
 
 /* global process */
 
-var PutCommitServer = require('./put-commit-server');
+var PutCommitServerCore = require('put-commit-server-core');
 var logFormat = require('log-format');
 var config = require('./config');
 
 const port = 6666;
 
-PutCommitServer(
+PutCommitServerCore(
   {
     gitDir:
       process.env.GITDIR || '/usr/share/nginx/html/smidgeo.com/story-beat-data',
     secret: config.secret
   },
-  useServer
+  useServerCore
 );
 
-function useServer(error, server) {
+function useServerCore(error, server) {
   if (error) {
     process.stderr.write(logFormat(error.message, error.stack));
     process.exit(1);

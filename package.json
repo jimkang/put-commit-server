@@ -4,14 +4,11 @@
   "description": "Simple service that takes file contents via http, writes it to a file, then commits it to a git repo.",
   "main": "put-commit-server.js",
   "private": true,
-  "scripts": {
-    "test": "make test"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:jimkang/put-commit-server.git"
   },
-  "private": true,
   "keywords": [],
   "author": "Jim Kang",
   "license": "MIT",
@@ -19,18 +16,8 @@
     "url": "https://github.com/jimkang/put-commit-server/issues"
   },
   "homepage": "https://github.com/jimkang/put-commit-server",
-  "devDependencies": {
-    "assert-no-error": "^1.0.0",
-    "request": "^2.86.0",
-    "tape": "^4.9.0"
-  },
   "dependencies": {
-    "await-to-js": "^2.0.1",
-    "call-next-tick": "^1.1.2",
-    "isomorphic-git": "^0.12.3",
-    "lodash.defaults": "^4.2.0",
     "log-format": "^1.0.0",
-    "restify": "^4.1.1",
-    "standard-bail": "^2.0.1"
+    "put-commit-server-core": "^1.0.0"
   }
 }

@@ -6,7 +6,7 @@ Simple service that takes file contents via http, writes it to a file, then comm
 Installation
 ------------
 
-Clone this repo.
+Clone this repo, then `npm install`.
 
 Usage
 -----
